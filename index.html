@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Registration Form</title>
+</head>
+
+<body>
+
+    <h1> BANK ACCOUNT REGISTRATION FORM</h1>
+
+    <form>
+
+        <fieldset>
+            <h1>Personal Details</h1>
+
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname"
+                   placeholder="Enter your full name" required>
+            <br>
+
+            <label for="fathername">Father / Mother Name:</label>
+            <input type="text" id="fathername" name="fathername"
+                   placeholder="Enter parent name" required>
+            <br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+            <br>
+
+            <label>Gender:</label>
+
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+            <br>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile"
+                   placeholder="Enter mobile number"
+                   maxlength="10" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter email address">
+            <br>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Address Details</legend>
+
+            <label for="address">Full Address:</label>
+            <br>
+
+            <textarea id="address" name="address"
+                      rows="4" cols="40"
+                      placeholder="Enter your complete address"
+                      required></textarea>
+
+            <br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city"
+                   placeholder="Enter city">
+            <br><br>
+
+            <label for="state">State:</label>
+
+            <select id="state" name="state">
+                <option value="">-- Select State --</option>
+                <option>Andhra Pradesh</option>
+                <option>Telangana</option>
+                <option>Tamil Nadu</option>
+                <option>Karnataka</option>
+                <option>Kerala</option>
+                <option>Maharashtra</option>
+                <option>Delhi</option>
+            </select>
+
+            <br>
+
+            <label for="pincode">Pincode:</label>
+            <input type="number" id="pincode" name="pincode"
+                   placeholder="Enter pincode">
+
+            <br>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Account Details</legend>
+
+            <label for="account">Account Type:</label>
+
+            <select id="account" name="account" required>
+                <option value="">-- Select Account Type --</option>
+                <option value="savings">Savings Account</option>
+                <option value="current">Current Account</option>
+                <option value="salary">Salary Account</option>
+            </select>
+
+            <br>
+
+            <label for="branch">Preferred Branch:</label>
+            <input type="text" id="branch" name="branch"
+                   placeholder="Enter branch name">
+
+            <br>
+
+            <label for="deposit">Initial Deposit:</label>
+            <input type="number" id="deposit" name="deposit"
+                   placeholder="Enter amount">
+
+            <br>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>KYC Details</legend>
+
+            <label for="aadhaar">Aadhaar Number:</label>
+            <input type="text" id="aadhaar" name="aadhaar"
+                   placeholder="Enter Aadhaar number"
+                   maxlength="12">
+
+            <br><br>
+
+            <label for="pan">PAN Number:</label>
+            <input type="text" id="pan" name="pan"
+                   placeholder="Enter PAN number">
+
+            <br><br>
+
+            <label for="idproof">Upload ID Proof:</label>
+            <input type="file" id="idproof" name="idproof">
+
+            <br><br>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Other Details</legend>
+
+            <label for="occupation">Occupation:</label>
+
+            <select id="occupation" name="occupation">
+                <option value="">-- Select Occupation --</option>
+                <option>Student</option>
+                <option>Employee</option>
+                <option>Business</option>
+                <option>Self Employed</option>
+                <option>Other</option>
+            </select>
+
+            <br><br>
+
+            <label for="income">Annual Income:</label>
+            <input type="number" id="income" name="income"
+                   placeholder="Enter annual income">
+
+            <br><br>
+
+            <label for="nominee">Nominee Name:</label>
+            <input type="text" id="nominee" name="nominee"
+                   placeholder="Enter nominee name">
+
+            <br><br>
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+            <legend>Declaration</legend>
+
+            <input type="checkbox" id="declaration" name="declaration" required>
+
+            <label for="declaration">
+                I hereby declare that the information provided above
+                is true and correct to the best of my knowledge.
+            </label>
+
+            <br><br>
+
+            <input type="checkbox" id="terms" name="terms" required>
+
+            <label for="terms">
+                I agree to the bank's terms and conditions.
+            </label>
+
+        </fieldset>
+
+        <br><br>
+
+        <input type="submit" value="Submit Application">
+
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+
+</html>
+
